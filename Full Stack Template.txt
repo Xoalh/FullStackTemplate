@@ -17,6 +17,11 @@ Create .env file and add it to .gitignore. This file will hold the database conn
 The connection string will come from Mongo Atlas. Connect => Connect your application. Paste into env file with 
 correct password. 
 
+///GitHub///
+git init 
+create .gitignore  "node_modules"
+create github repo and follow instructions
+
 4. Connect to MongoDB - add connection string to .env file. Next, add connection method.
 
 5. Create Port
@@ -26,7 +31,11 @@ correct password.
         Start: npm run dev
         End : Ctrl+C
 
-///GitHub///
-git init 
-create .gitignore  "node_modules"
-create github repo and follow instructions
+7. Set middleware
+
+
+8. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
+
+9. From root, init local git repo and commit
+
+10. Create heroku repo

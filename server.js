@@ -22,6 +22,14 @@ MongoClient.connect(dbConnectionString)
         collection = db.collection('quotes')
     })     
 
+    //Middleware
+    app.set('view engine', 'ejs')   //Set view engine to ejs
+    app.use(express.static('public'))  //setting up a folder to hold main.js and style etc. External files
+    app.use(express.urlencoded({extended:true})) //parses urls
+    app.use(express.json())                      //parse JSON
+    app.use(cors())                              //cross origin requests
+
+
     //PORT Creation
   app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is running on Port `)
