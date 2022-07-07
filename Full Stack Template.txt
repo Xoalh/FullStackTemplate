@@ -7,18 +7,24 @@ ejs (dynamically generate html using template), nodemon (--save-dev)
 
 //npm install express... npm install nodemon --save-dev
 
+If using nodemon, put script into package.json file:  "dev": "nodemon index.js"
+
 2. Require dependencies in server.js 
 
 3. Declare variables in server.js
-Create .env file. This file will hold the database connection, username, and password. 
+Create .env file and add it to .gitignore. This file will hold the database connection, username, and password. 
+
 The connection string will come from Mongo Atlas. Connect => Connect your application. Paste into env file with 
-correct password. In this template, it is the whole db, not any specific one.
+correct password. 
 
 4. Connect to MongoDB - add connection string to .env file. Next, add connection method.
 
 5. Create Port
-Test Mongo and Port Connection
 
+6. Test Mongo and Port Connection
+        How to start server manually: node server.js    Or use nodemon. 
+        Start: npm run dev
+        End : Ctrl+C
 
 ///GitHub///
 git init 
