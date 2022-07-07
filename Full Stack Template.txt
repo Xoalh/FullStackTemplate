@@ -31,11 +31,23 @@ create github repo and follow instructions
         Start: npm run dev
         End : Ctrl+C
 
-7. Set middleware
-
+7. Set middleware in server.js
 
 8. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
 
-9. From root, init local git repo and commit
+9. Add content to files from previous step. Link js and css to index. 
 
 10. Create heroku repo
+Heroku needs information from the env file that github doesn't need
+A. take .env out of gitignore and be sure to put it back after. Also, Heroku setting has a Confi Vars where you 
+    can put env variables.
+
+B. heroku login -i  Then confirm email, then paste in =>  d5SkJKaNPP5Zq29!
+C. heroku create NAME   //Name must start with a letter, end with a letter or digit and can only contain lowercase letters, 
+            digits, and dashes.
+D. echo "web: node server.js" > Procfile
+E. git add .
+F. git commit -m    "   "
+G. git push heroku main
+
+[heroku git:remote NAMEOFAPP
