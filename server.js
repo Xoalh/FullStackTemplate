@@ -15,7 +15,7 @@ let db,
 
 //Connect to MongoDb
 MongoClient.connect(dbConnectionString)
-//promise language rather than async
+//promise language rather than async. Should look up async version
     .then(client => {
         console.log("Connected to Database")
         db = client.db(dbName)
