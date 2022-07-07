@@ -27,7 +27,17 @@ MongoClient.connect(dbConnectionString)
     app.use(express.static('public'))  //setting up a folder to hold main.js and style etc. External files
     app.use(express.urlencoded({extended:true})) //parses urls
     app.use(express.json())                      //parse JSON
-    app.use(cors())                              //cross origin requests
+    app.use(cors())    //cross origin requests
+
+    //Tell server to serve up index.js. Using async function
+    app.get('/', async (req,res) =>{
+        try{
+        res.render('index.ejs')    
+        }catch(error){
+
+        }
+    })
+
 
 
     //PORT Creation

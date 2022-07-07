@@ -31,7 +31,7 @@ create github repo and follow instructions
         Start: npm run dev
         End : Ctrl+C
 
-7. Set middleware in server.js
+7. Set middleware in server.js and set up server response
 
 8. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
 
