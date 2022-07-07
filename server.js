@@ -6,3 +6,18 @@ const app = express()
 const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient
 require('dotenv').config()
+
+//Variables
+let db, 
+    dbConnectionString = process.env.DB_STRING, //get the string from the env file. Should be a const for best practice
+    dbName = "star-wars-quotes",  
+    collection 
+
+//Connect to MongoDb
+MongoClient.connect(dbConnectionString)
+//promise language rather than async
+    .then(client => {
+        console.log("Connected to Database")
+        db = client.db(dbName)
+        collection = db.collection('quotes')
+    })     
