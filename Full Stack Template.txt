@@ -1,0 +1,22 @@
+Make server.js file
+
+1. Initialize npm and install dependencies 
+//Terminal: Git Bash: "npm init"
+express, dotenv (let us hide enviroment variables like db passwords), cors (cross origin requests), mongodb, 
+ejs (dynamically generate html using template), nodemon (--save-dev) 
+
+//npm install express... npm install nodemon --save-dev
+
+2. Require dependencies in server.js 
+
+3. Declare variables
+4. Connect to MongoDB - add connection string to .env file
+5. Create Port
+Test Mongo and Port Connection
+
+
+///GitHub
+git init 
+create .gitignore  "node_modules"
+git .add
+git commit

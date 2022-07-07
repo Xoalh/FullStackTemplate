@@ -1,0 +1,35 @@
+npm init
+npm install express 
+
+.gitignore node_modules
+
+npm install --save-dev nodemon
+	"scripts": {
+           "dev": "nodemon index.js"
+           }
+
+   RUN: npm run dev
+
+npm install cors --sav  [require and app.use(express(cors)]
+
+
+git init
+git add .
+git commit -m "
+
+
+heroku login -i   d5SkJKaNPP5Zq29!
+
+heroku create NAME
+echo "web: node server.js" > Procfile
+git add .
+git commit -m ""
+git push heroku main
+
+[heroku git:remote NAMEOFAPP
+
+
+npm install mongodb
+
+
+
