@@ -46,6 +46,7 @@ B. heroku login -i  Then confirm email, then paste in =>  d5SkJKaNPP5Zq29!
 C. heroku create NAME   //Name must start with a letter, end with a letter or digit and can only contain lowercase letters, 
             digits, and dashes.
 D. echo "web: node server.js" > Procfile
+!!! This must be in utf8 format. !!!
 E. git add .
 F. git commit -m    "   "
 G. git push heroku main
